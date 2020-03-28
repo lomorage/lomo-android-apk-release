@@ -5,7 +5,7 @@
 
 > 20200326: 
 > ## EN:
->  - add back detete 
+>  - add batch detete 
 >  - add show small pic setting
 >  - add scan QR to add lomo server
 >  - add refresh to find lomo server
