@@ -3,6 +3,20 @@
 
 # Log
 
+> 20200405: 
+> ## EN:
+>  - add batch share to lomorage user in the same network 
+>  - add redundanc backup setting
+>  - add view all users list in the same server
+>  - add logout feature
+
+> ## Zh:
+> **周末上新：安卓APP：**
+> - 增加在同一网络下的批量分享
+> - 增加冗余备份设置
+> - 增加查看用户列表
+> - 增加登出功能
+
 > 20200326: 
 > ## EN:
 >  - add batch detete 
