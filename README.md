@@ -1,7 +1,21 @@
 # lomo-android-apk-release
 **Lomorage Android App APK package release**
 
+！！ 支持中文了
+
 # Log
+
+> 20200510:
+> ## EN:
+>  - add clicable login on first time using
+>  - add support Chinese OS
+
+> ## Zh:
+> **周末上新：安卓APP：**
+> - 增加第一次提示登录功能
+> - 支持中文系统
+
+
 
 > 20200405: 
 > ## EN:
