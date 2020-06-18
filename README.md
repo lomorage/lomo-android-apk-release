@@ -1,11 +1,28 @@
 # lomo-android-apk-release
 **Lomorage Android App APK package release**
 
-！！ 支持中文了
+# ！！ 支持中文了
 
 # Log
 
-> 20200510:
+## 06/18/2020
+> ## EN:
+> - add search by YYYYmmDD, like: 20160520 will search out the asseets on May 20, 2016
+> - also support search by year like: 2016, year + month: 201605. Enjoy to find the moments
+> - fix some issues on Android 7.1
+> - fully support Android 9.0+, esp. for **HUAWEI** phone
+> - page navigation for many assets after search
+> - improve speed: Fast as lightning
+
+> ## Zh:
+> **周末上新：安卓APP：**
+> - 增加按年月日搜索，快速定位，翻看您的回忆
+> - 修复了几个Android 7.1 上的问题
+> - 全力支持Android 9.0+ 的手机，尤其是**华为**的手机
+> - 分页显示搜索结果
+> - 提高速度：快如闪电
+
+## 20200510:
 > ## EN:
 >  - add clicable login on first time using
 >  - add support Chinese OS
@@ -17,7 +34,7 @@
 
 
 
-> 20200405: 
+## 20200405: 
 > ## EN:
 >  - add batch share to lomorage user in the same network 
 >  - add redundanc backup setting
@@ -31,7 +48,7 @@
 > - 增加查看用户列表
 > - 增加登出功能
 
-> 20200326: 
+## 20200326: 
 > ## EN:
 >  - add batch detete 
 >  - add show small pic setting
