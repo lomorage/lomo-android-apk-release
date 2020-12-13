@@ -8,12 +8,37 @@ echo $now
 
 rm -fr *.apk
 
-cp '/c/xampp/htdocs/bitbucket/lomo-android-b/app/release/com.lomoware.lomorage-v1(0.1)-release.apk' ./
+### $1
+orig_apk_path=$1
+echo "orig_apk_path="$orig_apk_path
+if [[ "$orig_apk_path" == "" ]]; then
+    orig_apk_path='/h/myproject/lomoware/lomo-android/app/release/'
+fi
 
-mv "./com.lomoware.lomorage-v1(0.1)-release.apk" "./com.lomoware.lomorage-v1(0.1)-release$now.apk"
+### $2
+orig_apk_file=$2
+echo "orig_apk_file="$orig_apk_file
+if [[ "$orig_apk_file" == "" ]]; then
+    orig_apk_file="com.lomoware.lomorage-v9(0.72)-release"
+fi
 
-apk_file="./com.lomoware.lomorage-v1(0.1)-release$now.apk"
+
+echo $orig_apk_file
+
+orig_apk_file_path=$orig_apk_path$orig_apk_file'.apk'
+
+echo $orig_apk_file_path
+
+cp $orig_apk_file_path ./
+
+release_apk_file=$orig_apk_file$now.apk
+
+echo $release_apk_file
+
+mv "./"$orig_apk_file".apk" "./"$release_apk_file
+
+
 
 tag=$now
 hub release delete $now
-hub release create -a $apk_file -m "latest release $now" $now
+hub release create -a $release_apk_file -m "latest release $now" $now

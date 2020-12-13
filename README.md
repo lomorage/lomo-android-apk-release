@@ -1,6 +1,11 @@
 # lomo-android-apk-release
 **Lomorage Android App APK package release**
 
+
+## 12/23/2020
+For google play store.
+
+
 # ！！ 支持中文了
 
 # Log
