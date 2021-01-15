@@ -1,14 +1,18 @@
 # lomo-android-apk-release
 **Lomorage Android App APK package release**
 
+## 01/14/2021:
+- Add white list for support formats to reduce retry-uploading
+
 
 ## 12/23/2020
 For google play store.
 
+# older version:
 
-# ！！ 支持中文了
+## ！！ 支持中文了
 
-# Log
+## Log
 
 ## 06/18/2020
 > ## EN:
@@ -71,3 +75,8 @@ For google play store.
 > - 改进导入速度
 > - 改进发送反馈功能
 > - 增强查找去除重复 照片/视频 功能
+
+# Deploy
+
+
+> ./deploy.sh "h:/myproject/lomoware/lomo-android/app/release/" "com.lomoware.lomorage-v13(0.76)-release"
