@@ -1,5 +1,19 @@
 # lomo-android-apk-release
 **Lomorage Android App APK package release**
+## Latest update:
+**1- This repo will only for pre-store release APK.**
+
+**2- Official package, please go to Google Play Store or XiaoMi App Store.**
+
+## 03/05/2021
+- Added Local directory manager: filter which albumn need to backup
+- Added Lomoframe register
+- Added Cache Offline assets with preview quality, you can use Lomorage offline
+- Performance improved
+- [Check detail release with snapshots](./release20210305.md)
+
+
+
 
 ## 01/14/2021:
 - Add white list for support formats to reduce retry-uploading
