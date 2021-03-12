@@ -5,6 +5,13 @@
 
 **2- Official package, please go to Google Play Store or XiaoMi App Store.**
 
+## 03/11/2021
+
+- fix gallery can not be refresh issue
+- add origin button on big view and setting for auto fetch original
+- add preview size selection before manually cache
+
+
 ## 03/05/2021
 - Added Local directory manager: filter which albumn need to backup
 - Added Lomoframe register
