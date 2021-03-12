@@ -5,11 +5,18 @@
 
 **2- Official package, please go to Google Play Store or XiaoMi App Store.**
 
-## 03/11/2021
+## 03/11/2021 - EN
 
 - fix gallery can not be refresh issue
 - add origin button on big view and setting for auto fetch original
 - add preview size selection before manually cache
+
+## 03/11/2021 - ZH_CN
+
+- 修复备份页面有时不刷新的问题
+- 增加了脱机缓存可以选大小
+- 增加了设置可以不自动下载原始图（点一下下载原始图）-可配置
+
 
 
 ## 03/05/2021
