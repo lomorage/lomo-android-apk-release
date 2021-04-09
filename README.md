@@ -5,6 +5,16 @@
 
 **2- Official package, please go to Google Play Store or XiaoMi App Store.**
 
+
+## 04/09/2021 - EN
+- Add privacy message
+- Add tips for deny the permission
+- Fix sending feedback issue
+
+## 04/09/2021 - 中文
+- 增加了隐私说明
+- 增加了当用户点击拒绝权限时的提示
+- 修复了发送email 有时没有 App 日志的问题
 ## 03/11/2021 - EN
 
 - fix gallery can not be refresh issue
