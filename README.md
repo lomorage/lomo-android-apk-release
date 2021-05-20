@@ -5,6 +5,14 @@
 
 **2- Official package, please go to Google Play Store or XiaoMi App Store.**
 
+## 05/19/2021 - EN
+- Fix loading album crash issue on some devices.
+- Add crash handler log
+
+## 05/19/2021 - 中文
+- 修复扫描本地文件崩溃问题
+- 增加崩溃日志
+
 
 ## 04/09/2021 - EN
 - Add privacy message
