@@ -5,6 +5,30 @@
 
 **2- Official package, please go to Google Play Store or XiaoMi App Store.**
 
+
+
+## Latest 09/12/2021
+- add meaning msg while create user fail
+
+
+## 最近更新：2021-07-22
+
+- 修复了用户反馈的问题：远程连接崩溃
+- 增加了备份页面刷新获取另外设备上传的照片
+- 增加了App版本更新：设置有徽章提醒
+- 引入了分析报告
+- App端目录配置移到共享文件夹：重新安装之后依然有效
+- 应用了Material主题
+- 增加了查看资源Hash值，方便确认是否重复照片
+
+### 2021-07-16
+- 增加了隐私说明
+- 增加了当用户点击拒绝权限时的提示
+- 修复了发送email 有时没有 App 日志的问题
+
+
+
+
 ## 05/19/2021 - EN
 - Fix loading album crash issue on some devices.
 - Add crash handler log
@@ -125,4 +149,4 @@ For google play store.
 # Deploy
 
 
-> ./deploy.sh "h:/myproject/lomoware/lomo-android/app/release/" "com.lomoware.lomorage-v13(0.76)-release"
+> ./deploy.sh "h:/myproject/lomoware/lomo-android-v232/app/release/" "com.lomoware.lomorage-v31(0.857)-release" 31
