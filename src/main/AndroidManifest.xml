@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.lomoware.lomorage">
+    <!-- <uses-permission android:name="android.permission.WAKE_LOCK" /> -->
+    <!-- <uses-feature android:name="android.hardware.type.watch" /> -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" /> <!-- Google Pixel disabled to receive the mdns package -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <!-- Without this folders will be inaccessible in Android-11 and above devices -->
+<!--    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />-->
+
+    <!-- Without this entry storage-permission entry will not be visible under app-info permissions list Android-10 and below -->
+<!--    <uses-permission-->
+<!--        android:name="android.permission.WRITE_EXTERNAL_STORAGE"-->
+<!--        android:maxSdkVersion="29"-->
+<!--        tools:ignore="ScopedStorage"/>-->
+
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:name=".LomorageApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.album.AlbumFolderActivity"></activity>
+        <activity android:name=".ui.album.SelectPhotosToAlbumActivity" /> <!-- android:label="@string/title_activity_select_photos_to_album"> -->
+        <!-- <intent-filter> -->
+        <!-- <action android:name="android.intent.action.MAIN" /> -->
+        <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
+        <!-- </intent-filter> -->
+        <!-- </activity> -->
+        <!-- <uses-library -->
+        <!-- android:name="com.google.android.wearable" -->
+        <!-- android:required="false" /> -->
+        <!--
+               Set to true if your app is Standalone, that is, it does not require the handheld
+               app to run.
+        -->
+        <!-- <meta-data -->
+        <!-- android:name="com.google.android.wearable.standalone" -->
+        <!-- android:value="true" /> -->
+        <activity android:name=".ui.album.LomoAlbumDetailActivity" />
+        <activity android:name=".LomoCodeScannerActivity" />
+        <activity android:name=".ui.trash.TrashMgrActivity" />
+        <activity android:name=".ui.directorymgr.LocalDirectoryMgrActivity" />
+        <activity android:name=".ui.settings.OfflineCacheMgrActivity" />
+        <activity android:name=".FrameMgrActivity" />
+        <activity android:name=".ShareSpaceActivity" />
+        <activity
+            android:name=".ui.framedisplay.FrameDisplayActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_frame_display"
+            android:theme="@style/FullscreenTheme" />
+        <activity android:name=".ui.settings.RedundancyBackupSetActivity" />
+        <activity android:name=".ui.members.MemberSelectActivity" />
+        <activity
+            android:name=".LomoSplashActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.welcome.LomorageWelcomeActivity"
+            android:theme="@style/LomoWelcomeScreenTheme" /> <!-- <activity -->
+        <!-- android:name=".SettingsActivity" -->
+        <!-- android:label="@string/title_activity_settings" -->
+        <!-- android:parentActivityName=".MainActivity" -->
+        <!-- android:screenOrientation="portrait"> -->
+        <!-- <meta-data -->
+        <!-- android:name="android.support.PARENT_ACTIVITY" -->
+        <!-- android:value="com.lomoware.lomorage.MainActivity" /> -->
+        <!-- </activity> -->
+        <activity
+            android:name=".ui.login.LoginActivity"
+            android:label="@string/title_activity_login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".LomoPhotoActivity" /> <!-- android:theme="@style/NoActionBar" -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+    </application>
+
+</manifest>
