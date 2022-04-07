@@ -3,7 +3,7 @@
 ## Latest update:
 **1- This repo will only for pre-store release APK.**
 
-**2- Official package, please go to Google Play Store or XiaoMi App Store.**
+**2- Official package, please go to Google Play Store or https://lomorage.com.**
 
 
 
