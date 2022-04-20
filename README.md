@@ -150,3 +150,5 @@ For google play store.
 
 
 > ./deploy.sh "h:/myproject/lomoware/lomo-android-v232/app/release/" "com.lomoware.lomorage-v31(0.857)-release" 31
+
+> ./deploy-dev.sh "/h/myproject/lomoware/lomo-android/app/release/" "com.lomoware.lomorage-v41(0.944)-release"
