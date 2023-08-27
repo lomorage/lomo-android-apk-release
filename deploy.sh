@@ -14,6 +14,7 @@ version_code=$3
 release_time=$now
 
 homepage='/h/myproject/lomoware/homepage'
+lomosw_path='/h/myproject/lomoware/lomosw-new/android'
 
 echo "orig_apk_path="$orig_apk_path
 if [[ "$orig_apk_path" == "" ]]; then
@@ -44,9 +45,16 @@ mv "./"$orig_apk_file".apk" "./"$release_apk_file
 
 
 
-tag="release/${version_code}"
+tag="latest_release"
 hub release delete $tag
-hub release create -a $release_apk_file -m "latest release ($tag) $now" $tag
+hub release create -a $release_apk_file -m "latest release/${version_code} ($tag) $now" $tag
 
 cd $homepage
 ./updatever.sh -p android -D $version_code -T $release_time
+
+
+# copy from 
+
+cp -f $orig_apk_file_path ${lomosw_path}/lomorage.apk
+
+cd $lomosw_path

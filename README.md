@@ -149,6 +149,6 @@ For google play store.
 # Deploy
 
 
-> ./deploy.sh "h:/myproject/lomoware/lomo-android-v232/app/release/" "com.lomoware.lomorage-v31(0.857)-release" 31
+> ./deploy.sh "h:/myproject/lomoware/lomo-android/app/release/" "com.lomoware.lomorage-v56(0.992)-release" 56
 
-> ./deploy-dev.sh "/h/myproject/lomoware/lomo-android/app/release/" "com.lomoware.lomorage-v41(0.944)-release"
+> ./deploy-dev.sh "/h/myproject/lomoware/lomo-android/app/release/" "com.lomoware.lomorage-v49(0.985)-release"
